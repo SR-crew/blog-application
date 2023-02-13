@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  mobile-ios
+//  Blog
 //
 //  Created by Alisher Baigazin on 14.02.2023.
 //

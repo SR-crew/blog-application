@@ -1,14 +1,14 @@
 //
-//  mobile_iosTests.swift
-//  mobile-iosTests
+//  BlogTests.swift
+//  BlogTests
 //
 //  Created by Alisher Baigazin on 14.02.2023.
 //
 
 import XCTest
-@testable import mobile_ios
+@testable import Blog
 
-final class mobile_iosTests: XCTestCase {
+final class BlogTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

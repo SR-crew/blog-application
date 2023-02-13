@@ -1,13 +1,13 @@
 //
-//  mobile_iosUITests.swift
-//  mobile-iosUITests
+//  BlogUITests.swift
+//  BlogUITests
 //
 //  Created by Alisher Baigazin on 14.02.2023.
 //
 
 import XCTest
 
-final class mobile_iosUITests: XCTestCase {
+final class BlogUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

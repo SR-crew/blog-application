@@ -1,13 +1,13 @@
 //
-//  mobile_iosUITestsLaunchTests.swift
-//  mobile-iosUITests
+//  BlogUITestsLaunchTests.swift
+//  BlogUITests
 //
 //  Created by Alisher Baigazin on 14.02.2023.
 //
 
 import XCTest
 
-final class mobile_iosUITestsLaunchTests: XCTestCase {
+final class BlogUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
