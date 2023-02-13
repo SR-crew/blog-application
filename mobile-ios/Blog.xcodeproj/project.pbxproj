@@ -22,14 +22,14 @@
 			containerPortal = 8487BB9B299AB3E5001AF073 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8487BBA2299AB3E5001AF073;
-			remoteInfo = "Blog";
+			remoteInfo = Blog;
 		};
 		8487BBBE299AB3E7001AF073 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8487BB9B299AB3E5001AF073 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8487BBA2299AB3E5001AF073;
-			remoteInfo = "Blog";
+			remoteInfo = Blog;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -139,13 +139,14 @@
 				8487BB9F299AB3E5001AF073 /* Sources */,
 				8487BBA0299AB3E5001AF073 /* Frameworks */,
 				8487BBA1299AB3E5001AF073 /* Resources */,
+				8412BC09299ADF6000EB96D4 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Blog;
-			productName = "Blog";
+			productName = Blog;
 			productReference = 8487BBA3299AB3E5001AF073 /* Blog.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -163,7 +164,7 @@
 				8487BBB5299AB3E7001AF073 /* PBXTargetDependency */,
 			);
 			name = BlogTests;
-			productName = "BlogTests";
+			productName = BlogTests;
 			productReference = 8487BBB3299AB3E7001AF073 /* BlogTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -181,7 +182,7 @@
 				8487BBBF299AB3E7001AF073 /* PBXTargetDependency */,
 			);
 			name = BlogUITests;
-			productName = "BlogUITests";
+			productName = BlogUITests;
 			productReference = 8487BBBD299AB3E7001AF073 /* BlogUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -253,6 +254,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8412BC09299ADF6000EB96D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8487BB9F299AB3E5001AF073 /* Sources */ = {
