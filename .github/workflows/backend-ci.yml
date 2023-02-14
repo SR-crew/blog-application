@@ -1,0 +1,46 @@
+name: Elixir CI
+
+on: push
+
+jobs:
+  elixir:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Elixir
+        uses: actions/setup-elixir@v1
+        with:
+          elixir-version: 1.13.4
+          otp-version: 25.2.2
+
+      - name: Install dependencies
+        run: |
+          cd blog-application/backend
+          mix deps.get
+
+      - name: Run tests
+        run: |
+          cd blog-application/backend
+          mix test
+
+      - name: Run credo
+        run: |
+          cd blog-application/backend
+          mix credo --strict
+
+      - name: Compile issues
+        run: |
+          cd blog-application/backend
+          mix compile --warnings-as-errors
+
+      # TODO(sabit): add dialyxir library to run this.
+      # - name: Dialyzer
+      #   run: |
+      #     cd blog-application/backend
+      #     mix dialyzer
+
+      - name: Check code is properly formatted
+        run: cd blog-application/backend mix format --check-formatted
