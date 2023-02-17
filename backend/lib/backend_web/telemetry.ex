@@ -1,4 +1,7 @@
 defmodule BackendWeb.Telemetry do
+  @moduledoc """
+  This module defines the setup for Telemetry metrics.
+  """
   use Supervisor
   import Telemetry.Metrics
 
