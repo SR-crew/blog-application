@@ -18,29 +18,36 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd blog-application/backend
+          cd backend
           mix deps.get
+
+      - name: Initialize DB, run migration
+        run: |
+          cd backend
+          mix ecto.create && mix ecto.migrate
 
       - name: Run tests
         run: |
-          cd blog-application/backend
+          cd backend
           mix test
 
       - name: Run credo
         run: |
-          cd blog-application/backend
+          cd backend
           mix credo --strict
 
       - name: Compile issues
         run: |
-          cd blog-application/backend
+          cd backend
           mix compile --warnings-as-errors
 
       # TODO(sabit): add dialyxir library to run this.
       # - name: Dialyzer
       #   run: |
-      #     cd blog-application/backend
+      #     cd backend
       #     mix dialyzer
 
       - name: Check code is properly formatted
-        run: cd blog-application/backend mix format --check-formatted
+        run: |
+          cd backend 
+          mix format --check-formatted
