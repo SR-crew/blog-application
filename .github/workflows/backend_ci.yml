@@ -1,0 +1,57 @@
+name: Elixir CI
+
+on: push
+  
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    name: Build and test
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Elixir
+      uses: erlef/setup-beam@988e02bfe678367a02564f65ca2e37726dc0268f
+      with:
+        elixir-version: '1.12.3' # Define the elixir version [required]
+        otp-version: '24.1' # Define the OTP version [required]
+        
+    - name: Restore dependencies cache
+      uses: actions/cache@v3
+      with:
+        path: deps
+        key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
+        restore-keys: ${{ runner.os }}-mix-
+        
+    - name: Install dependencies
+      run: |
+        cd blog-application/backend
+        mix deps.get
+
+    - name: Run tests
+      run: |
+        cd blog-application/backend
+        mix test
+
+    - name: Run credo
+      run: |
+        cd blog-application/backend
+        mix credo --strict
+
+    - name: Compile issues
+      run: |
+        cd blog-application/backend
+        mix compile --warnings-as-errors
+
+    # TODO(sabit): add dialyxir library to run this.
+    # - name: Dialyzer
+    #   run: |
+    #     cd blog-application/backend
+    #     mix dialyzer
+
+    - name: Check code is properly formatted
+      run: cd blog-application/backend mix format --check-formatted
+
