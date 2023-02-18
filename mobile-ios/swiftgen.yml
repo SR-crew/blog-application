@@ -11,17 +11,17 @@
 ##   Be sure that SwiftGen only parses ONE locale (typically Base.lproj, or en.lproj, or whichever your development region is); otherwise it will generate the same keys multiple times.
 ##   SwiftGen will parse all `.strings` files found in that folder.
 
-## strings:
-##  inputs:
-##    - en.lproj
-##  outputs:
-##    # - templateName: structured-swift5
-##    - templatePath: templates/structured-swift5.stencil
-##      output: Strings.swift
-##      params:
-##        enumName: Strings
-##        bundle: Constants.stringsBundle
-##        lookupFunction: Constants.stringsBundle
+ strings:
+  inputs:
+    - en.lproj
+  outputs:
+    # - templateName: structured-swift5
+    - templatePath: templates/structured-swift5.stencil
+      output: Strings.swift
+      params:
+        enumName: Strings
+        bundle: Constants.stringsBundle
+        lookupFunction: Constants.stringsBundle
 
 
 ## Generate constants for your Assets Catalogs, including constants for images, colors, ARKit resources, etc.
