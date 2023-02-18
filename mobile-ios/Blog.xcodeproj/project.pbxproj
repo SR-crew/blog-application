@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8412BC0E299AEAD100EB96D4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8412BC10299AEAD100EB96D4 /* Localizable.strings */; };
-		8412BC14299AEB1B00EB96D4 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8412BC13299AEB1B00EB96D4 /* Colors.xcassets */; };
 		8412BC19299AEF4500EB96D4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412BC16299AEF4500EB96D4 /* Colors.swift */; };
 		8412BC1A299AEF4500EB96D4 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8412BC17299AEF4500EB96D4 /* Images.swift */; };
 		8487BBA7299AB3E5001AF073 /* BlogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487BBA6299AB3E5001AF073 /* BlogApp.swift */; };
@@ -18,6 +17,7 @@
 		8487BBB8299AB3E7001AF073 /* BlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487BBB7299AB3E7001AF073 /* BlogTests.swift */; };
 		8487BBC2299AB3E7001AF073 /* BlogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487BBC1299AB3E7001AF073 /* BlogUITests.swift */; };
 		8487BBC4299AB3E7001AF073 /* BlogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8487BBC3299AB3E7001AF073 /* BlogUITestsLaunchTests.swift */; };
+		849F305C29A14E4000978464 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849F305B29A14E4000978464 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,6 @@
 		8412BC0F299AEAD100EB96D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8412BC11299AEAD600EB96D4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8412BC12299AEAF600EB96D4 /* kk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kk; path = kk.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8412BC13299AEB1B00EB96D4 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		8412BC16299AEF4500EB96D4 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8412BC17299AEF4500EB96D4 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		8487BBA3299AB3E5001AF073 /* Blog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +54,7 @@
 		8487BBBD299AB3E7001AF073 /* BlogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8487BBC1299AB3E7001AF073 /* BlogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogUITests.swift; sourceTree = "<group>"; };
 		8487BBC3299AB3E7001AF073 /* BlogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		849F305B29A14E4000978464 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			children = (
 				8487BBAA299AB3E6001AF073 /* Assets.xcassets */,
 				8412BC10299AEAD100EB96D4 /* Localizable.strings */,
-				8412BC13299AEB1B00EB96D4 /* Colors.xcassets */,
+				849F305B29A14E4000978464 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8487BBAE299AB3E6001AF073 /* Preview Assets.xcassets in Resources */,
-				8412BC14299AEB1B00EB96D4 /* Colors.xcassets in Resources */,
+				849F305C29A14E4000978464 /* Colors.xcassets in Resources */,
 				8412BC0E299AEAD100EB96D4 /* Localizable.strings in Resources */,
 				8487BBAB299AB3E6001AF073 /* Assets.xcassets in Resources */,
 			);
