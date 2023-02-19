@@ -1,6 +1,6 @@
 import "../styles/globals.css";
+import type { NextComponentType } from "next";
 import type { AppContext, AppInitialProps, AppLayoutProps } from "next/app";
-import { NextComponentType } from "next";
 
 const MyApp: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = ({
   Component,
