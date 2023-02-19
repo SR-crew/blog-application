@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  frontend:
+    container_name: frontend_blog
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    command: npm run dev
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/frontend/.next
+    ports:
+      - '3000:3000'
