@@ -1,8 +1,9 @@
-import type { NextPage } from "next";
 import React from "react";
 
+import type { NextPage } from "next";
+
 const Home: NextPage = () => {
-  return <div>Should be rendered after merge</div>;
+  return <div></div>;
 };
 
 export default Home;
