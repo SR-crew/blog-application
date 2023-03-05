@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "docker compose up",
+    "dev-destroy": "docker compose down -v",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -11,7 +12,7 @@
   },
   "dependencies": {
     "@react-aria/button": "^3.6.0",
-    "classnames": "^2.3.1",
+    "classnames": "^2.3.2",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
