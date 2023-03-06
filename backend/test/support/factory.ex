@@ -1,6 +1,10 @@
 defmodule Backend.Factory do
-  alias Backend.Repo
+  @moduledoc """
+  A factory for creating test data.
+  """
+
   alias Backend.Posts.Post
+  alias Backend.Repo
 
   # Factories
 

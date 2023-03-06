@@ -3,8 +3,8 @@ defmodule Backend.Posts do
   The Posts context.
   """
 
-  alias Backend.Repo
   alias Backend.Posts.Post
+  alias Backend.Repo
 
   @doc """
   Returns the list of posts.
