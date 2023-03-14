@@ -9,7 +9,12 @@ defmodule Backend.Factory do
   # Factories
 
   def build(:post) do
-    %Post{title: "hello world"}
+    %Post{
+      title: "hello world",
+      summary: "hello world summary",
+      content: "hello world content",
+      read_duration: 5
+    }
   end
 
   # Convenience API
