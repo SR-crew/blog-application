@@ -13,4 +13,12 @@ defmodule Backend.Posts do
   def list_posts do
     Repo.all(Post)
   end
+
+  @doc """
+  Returns single post by id.
+  """
+  @spec get_post(integer()) :: %Post{} | nil
+  def get_post(id) do
+    Repo.get(Post, id)
+  end
 end
