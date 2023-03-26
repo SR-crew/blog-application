@@ -9,3 +9,16 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias Backend.Repo
+alias Backend.Posts.Post
+
+Repo.insert!(%Post{
+  title: "Hello world!",
+  content: "This is a sample post content.",
+  summary: "This is a sample post summary.",
+  read_duration: 1
+})
+
+IO.puts("")
+IO.puts("Success! Sample data has been added.")

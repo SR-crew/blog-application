@@ -1,4 +1,4 @@
-defmodule Backend.Post do
+defmodule Backend.Posts.Post do
   @moduledoc """
   The Post schema.
   """
