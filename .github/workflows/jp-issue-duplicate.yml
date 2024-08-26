@@ -12,6 +12,6 @@ jobs:
         # with:
         #   github-token: ${{ secrets.ISSUE_DUPLICATOR_PAT }}
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       
